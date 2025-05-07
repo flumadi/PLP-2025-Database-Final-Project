@@ -107,7 +107,7 @@ VALUES
 🚀 How to Use  
 Clone the repo:  
   
-git clone https://github.com/yourusername/library-management-db.git  
+git clone ----------------------------------------------
 Import into MySQL:  
 
 mysql -u root -p library_management < library_schema.sql  
