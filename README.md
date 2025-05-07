@@ -36,10 +36,11 @@ Patrons → Borrowing Records (1-to-Many)
 📜 library_schema.sql
 sql
 
--- 1. BOOKS TABLE (Stores all book information)
-CREATE TABLE books (
-    book_id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
+-- 1. BOOKS TABLE (Stores all book information)  
+
+CREATE TABLE books (  
+    book_id INT AUTO_INCREMENT PRIMARY KEY,  
+    title VARCHAR(255) NOT NULL,  
     author VARCHAR(255) NOT NULL,
     isbn VARCHAR(20) UNIQUE NOT NULL,  -- ISBN must be unique
     publication_year INT,
@@ -49,8 +50,9 @@ CREATE TABLE books (
     CONSTRAINT chk_copies CHECK (available_copies <= total_copies)  -- Prevent negative availability
 );
 
--- 2. PATRONS TABLE (Library members)
-CREATE TABLE patrons (
+-- 2. PATRONS TABLE (Library members)  
+
+CREATE TABLE patrons (  
     patron_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
