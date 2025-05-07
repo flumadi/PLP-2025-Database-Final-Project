@@ -2,7 +2,8 @@
 ## Library Management System
 ## MySQL Database Implementation
 📌 Project Description
-This project is a Library Management System built entirely with MySQL. It includes:<br>
+This project is a Library Management System built entirely with MySQL.  
+It includes:<br>
 ✅ Database schema with tables for books, patrons, and borrowing_records<br>
 ✅ Proper constraints (PK, FK, NOT NULL, UNIQUE)<br>
 ✅ Sample data for testing<br>
@@ -13,29 +14,24 @@ library-management-db/<br>
 ├── library_schema.sql   # Complete SQL script (tables + sample data)<br>
 └── README.md            # This guide
 
-## 🔧 How to Set Up the Database
+## 🔧 How to Set Up the Database  
 1. Create the Database<br>
 Run this in MySQL:<br>
 
-sql
 CREATE DATABASE library_management;<br>
 USE library_management;<br>
 
-2. Execute the SQL Script<br>
+3. Execute the SQL Script<br>
 Copy and run the entire library_schema.sql file in your MySQL client (e.g., MySQL Workbench, command line).<br>
 
 📊 ERD (Entity-Relationship Diagram)<br>
 [Library Management ERD]<br>
 
 Relationships:<br>
-
 Books → Borrowing Records (1-to-Many)<br>
-
 Patrons → Borrowing Records (1-to-Many)<br>
 
-📜 library_schema.sql<br>
-sql
-
+📜 library_schema.sql  
 -- 1. BOOKS TABLE (Stores all book information)  
 CREATE TABLE books (  
     book_id INT AUTO_INCREMENT PRIMARY KEY,  
