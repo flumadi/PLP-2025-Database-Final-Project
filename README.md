@@ -78,7 +78,9 @@ CREATE TABLE borrowing_records (
     CONSTRAINT chk_return_date CHECK (return_date IS NULL OR return_date >= borrow_date)  
 );  
 
--- 📂 SAMPLE DATA INSERTION  
+## 📂 SAMPLE DATA INSERTION  
+Below is a provided sample of data you could use to get to be familiar with and interact with the database codes and queries  
+
 -- Add sample books  
 INSERT INTO books (title, author, isbn, publication_year, genre, total_copies, available_copies)  
 VALUES   
@@ -89,16 +91,16 @@ VALUES
 -- Add sample patrons  
 INSERT INTO patrons (first_name, last_name, email, phone)  
 VALUES   
-('John', 'Smith', 'john.smith@email.com', '555-0101'),  
-('Emily', 'Johnson', 'emily.j@email.com', '555-0102'),  
-('Michael', 'Williams', 'michael.w@email.com', NULL);  
+('John', 'Supet', 'john.supet@email.com', '254 765 293876'),  
+('Emily', 'Joy', 'emily.j@email.com', '254 734 615243'),  
+('Michael', 'Wasilwa', 'michael.w@email.com', '254 765 423156'NULL);  
 
 -- Add sample borrowing records  
 INSERT INTO borrowing_records (book_id, patron_id, borrow_date, due_date, return_date, status)  
 VALUES   
-(1, 1, '2023-01-15', '2023-02-15', NULL, 'borrowed'),  -- Currently borrowed  
-(2, 2, '2023-02-01', '2023-03-01', '2023-02-28', 'returned'),  -- Returned early  
-(3, 3, '2023-03-10', '2023-04-10', NULL, 'borrowed');  -- Currently borrowed  
+(1, 1, '2025-01-15', '2025-02-15', NULL, 'borrowed'),  -- Currently borrowed  
+(2, 2, '2025-02-01', '2025-03-01', '2023-02-28', 'returned'),  -- Returned early  
+(3, 3, '2025-03-10', '2025-04-10', NULL, 'borrowed');  -- Currently borrowed  
 
 🔍 Key Features  
 ✔ Data Integrity – Constraints prevent invalid data (e.g., available_copies ≤ total_copies)  
