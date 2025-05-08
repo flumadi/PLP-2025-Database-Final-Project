@@ -36,7 +36,7 @@ library-management-db/<br>
 ## Entity Relationship Diagram (ERD)
 ![Library Database ERD](library-management-db.jpg)  
 
-##📊 Database Schema Details
+## 📊 Database Schema Details
 📜 library_schema.sql(Tables)  
 📚Core Entities  
 -publishers-Stores publisher details for book acquisition.  
