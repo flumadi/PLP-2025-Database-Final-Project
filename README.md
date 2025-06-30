@@ -75,7 +75,7 @@ mysql -u root -p library_management < library_schema.sql
 
 ✅Query the database:  
 sql  
--- Example: Check available books  
+ Example: Check available books  
 SELECT * FROM books WHERE available_copies > 0;  
 
 ##For any or further inquiries about the same feel free to contact for assistance on [mathiasfridah2@gmail.com]  
